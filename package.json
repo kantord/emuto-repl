@@ -1,6 +1,6 @@
 {
   "name": "emuto-repl",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "main": "emuto-repl.js",
   "author": "Dániel Kántor",
   "license": "MIT",
@@ -15,12 +15,20 @@
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "emuto": "^1.23.0"
+    "emuto": "^1.23.0",
+    "semantic-release": "^15.10.5",
+    "travis-deploy-once": "^5.0.9"
   },
   "scripts": {
-    "build": "babel -o emuto-repl.js index.js"
+    "build": "babel -o emuto-repl.js index.js",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "bin": {
     "emuto-repl": "./emuto-repl.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kantord/emuto-repl.git"
   }
 }
