@@ -5,6 +5,8 @@
   "author": "Dániel Kántor",
   "license": "MIT",
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
     "json-stringify-pretty-compact": "^1.2.0",
     "stdrepl": "^1.0.1"
   },
@@ -13,7 +15,6 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "emuto": "^1.23.0",
     "semantic-release": "^15.10.5",
